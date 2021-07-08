@@ -6,7 +6,7 @@
   <link href="https://echodjx.github.io/atom.xml" rel="self"/>
   
   <link href="https://echodjx.github.io/"/>
-  <updated>2021-07-07T09:18:57.449Z</updated>
+  <updated>2021-07-08T12:06:41.712Z</updated>
   <id>https://echodjx.github.io/</id>
   
   <author>
@@ -17,23 +17,30 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
+    <title>测试</title>
     <link href="https://echodjx.github.io/2021/07/07/hello-world/"/>
     <id>https://echodjx.github.io/2021/07/07/hello-world/</id>
-    <published>2021-07-07T07:58:54.581Z</published>
-    <updated>2021-07-07T09:18:57.449Z</updated>
+    <published>2021-07-06T16:00:00.000Z</published>
+    <updated>2021-07-08T12:06:41.712Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt;</summary>
+    <summary type="html">&lt;p&gt;​    以前经常通过Typora记一些东西，也没有分类，就堆在那，久了就很乱。前段时间看了学弟搭的博客，想想自己还是动手搭一个吧。大二的时候就想搭一个，当时嫌麻烦，搁置了。&lt;/p&gt;
+&lt;p&gt;​   </summary>
         
       
     
     
     
+    <category term="杂项" scheme="https://echodjx.github.io/categories/%E6%9D%82%E9%A1%B9/"/>
+    
+    
+    <category term="测试" scheme="https://echodjx.github.io/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+    <category term="Markdown" scheme="https://echodjx.github.io/tags/Markdown/"/>
     
   </entry>
   

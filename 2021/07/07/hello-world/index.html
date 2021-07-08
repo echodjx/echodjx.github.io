@@ -11,7 +11,7 @@
   <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-  <title>Hello World | DJX</title>
+  <title>测试 | DJX</title>
 
   
     
@@ -125,7 +125,7 @@
               
                 <a href="/" class="drawer-menu-item-link">
                   
-                    <i class="/medias/Home.png" aria-hidden="true"></i>
+                    <i class="fa fa-home" aria-hidden="true"></i>
                   
                   <span class="name">首页</span>
                 </a>
@@ -136,7 +136,7 @@
               
                 <a href="/archives" class="drawer-menu-item-link">
                   
-                    <i class="/medias/LIST.png" aria-hidden="true"></i>
+                    <i class="fa fa-archive" aria-hidden="true"></i>
                   
                   <span class="name">归档</span>
                 </a>
@@ -147,7 +147,7 @@
               
                 <a href="/tags" class="drawer-menu-item-link">
                   
-                    <i class="/medias/LABEL.png" aria-hidden="true"></i>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
                   
                   <span class="name">标签</span>
                 </a>
@@ -158,7 +158,7 @@
               
                 <a href="/categories" class="drawer-menu-item-link">
                   
-                    <i class="/medias/CLASSIFY.png" aria-hidden="true"></i>
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
                   
                   <span class="name">分类</span>
                 </a>
@@ -169,7 +169,7 @@
               
                 <a href="/about" class="drawer-menu-item-link">
                   
-                    <i class="/medias/about.png" aria-hidden="true"></i>
+                    <i class="fa fa-user" aria-hidden="true"></i>
                   
                   <span class="name">关于</span>
                 </a>
@@ -178,10 +178,27 @@
           
             <li class="drawer-box-content_item" style="position: relative;">
               
-                <a href="/friends" class="drawer-menu-item-link">
-                  
-                  <span class="name">友情链接</span>
+                <a href="javascript:;" class="drawer-menu-item-link has-children" @click="openOrCloseMenu(5)">
+                  <span>
+                    
+                      <i class="fa fa-link"></i>
+                    
+                    <span class="name">友情链接</span>
+                  </span>
+                  <i class="fa fa-chevron-left arrow " :class="{'icon-rotate': isOpen(5)}" aria-hidden="true"></i>
                 </a>
+                <ul class="drawer-sub-menu" v-if="isOpen(5)">
+                  
+                  <li>
+                    <a href="/about">
+                      
+                      <i class="fa fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -259,7 +276,7 @@
               
                 <a href="/" class="menu-item-link">
                   
-                    <i class="/medias/Home.png" aria-hidden="true"></i>
+                    <i class="fa fa-home" aria-hidden="true"></i>
                   
                   <span class="name">首页</span>
                 </a>
@@ -270,7 +287,7 @@
               
                 <a href="/archives" class="menu-item-link">
                   
-                    <i class="/medias/LIST.png" aria-hidden="true"></i>
+                    <i class="fa fa-archive" aria-hidden="true"></i>
                   
                   <span class="name">归档</span>
                 </a>
@@ -281,7 +298,7 @@
               
                 <a href="/tags" class="menu-item-link">
                   
-                    <i class="/medias/LABEL.png" aria-hidden="true"></i>
+                    <i class="fa fa-tags" aria-hidden="true"></i>
                   
                   <span class="name">标签</span>
                 </a>
@@ -292,7 +309,7 @@
               
                 <a href="/categories" class="menu-item-link">
                   
-                    <i class="/medias/CLASSIFY.png" aria-hidden="true"></i>
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
                   
                   <span class="name">分类</span>
                 </a>
@@ -303,7 +320,7 @@
               
                 <a href="/about" class="menu-item-link">
                   
-                    <i class="/medias/about.png" aria-hidden="true"></i>
+                    <i class="fa fa-user" aria-hidden="true"></i>
                   
                   <span class="name">关于</span>
                 </a>
@@ -312,10 +329,25 @@
           
             <li class="menu-item" style="position: relative;">
               
-                <a href="/friends" class="menu-item-link">
+                <a href="javascript:;" class="menu-item-link">
+                  
+                    <i class="fa fa-link"></i>
                   
                   <span class="name">友情链接</span>
+                  <i class="fa fa-chevron-down arrow" aria-hidden="true"></i>
                 </a>
+                <ul class="sub-menu">
+                  
+                  <li>
+                    <a href="/about">
+                      
+                      <i class="fa fa-film" style="margin-top: -20px;"></i>
+                      
+                      <span>关于我</span>
+                    </a>
+                  </li>
+                  
+                </ul>
               
             </li>
           
@@ -466,14 +498,14 @@
 
 
 
-<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/7.jpg" style="background-repeat: no-repeat; background-size: cover; 
+<div class="post-detail-header lazyload" id="thumbnail_canvas" data-original="/medias/12.jpg" style="background-repeat: no-repeat; background-size: cover; 
   background-position: center center;position: relative;">
   <div class="post-detail-header-mask"></div>
   <canvas id="header_canvas"style="position:absolute;bottom:0;pointer-events:none;"></canvas>
   
   <div class="title-box">
     <span class="title">
-      Hello World
+      测试
     </span>
   </div>
   
@@ -495,18 +527,43 @@
       
       <div class="post-tags-categories">
         
+        <div class="tags">
+          <i class="iconfont icontag"></i>
+          
+            <a href="/tags/%E6%B5%8B%E8%AF%95/" class="">
+              测试
+            </a>
+          
+            <a href="/tags/Markdown/" class="">
+              Markdown
+            </a>
+          
+        </div>
+        
+        
+        <div class="categories">
+          <i class="iconfont iconbookmark1"></i>
+          
+            <a href="/categories/%E6%9D%82%E9%A1%B9/" class="">
+              杂项
+            </a>
+          
+        </div>
         
       </div>
       <div class="post-content">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+        <p>​    以前经常通过Typora记一些东西，也没有分类，就堆在那，久了就很乱。前段时间看了学弟搭的博客，想想自己还是动手搭一个吧。大二的时候就想搭一个，当时嫌麻烦，搁置了。</p>
+<p>​    现在想想以后代码的路还长，虽然觉得写博客有些麻烦，不像记笔记那么随意，但可以在<del>摸鱼</del>闲着的时候写写。</p>
+<p>​    所以搭好了，以后随缘更吧，毕竟比较懒😅</p>
+<p><strong>下面是一些测试</strong>：</p>
+<h1 id="这是一级标题"><a href="#这是一级标题" class="headerlink" title="这是一级标题"></a>这是一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">hexo g
+hexo s
+hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p><strong>图片:</strong></p>
+<p> <img "" class="lazyload placeholder" data-original="medias/0.jpg" src="https://img10.360buyimg.com/ddimg/jfs/t1/157667/29/9156/134350/603c6445Ebbc9cabe/41219c5d36d45072.gif" alt="avatar"></p>
+<p><strong>链接</strong>:</p>
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
       </div>
       
@@ -517,7 +574,7 @@
     </li>
     <li class="post-copyright-link">
     <strong>文章链接:  </strong>
-    <a href="/2021/07/07/hello-world/" target="_blank" title="Hello World">https://echodjx.github.io/2021/07/07/hello-world/</a>
+    <a href="/2021/07/07/hello-world/" target="_blank" title="测试">https://echodjx.github.io/2021/07/07/hello-world/</a>
     </li>
     <li class="post-copyright-license">
       <strong>版权声明:   </strong>
@@ -1700,13 +1757,14 @@
     </main>
 
     <!-- 页脚 -->
-    <div class="footer bg-color">
+    
+<div class="footer bg-color">
   <div class="footer-main">
     <div class="link">
       
     </div>
     <div class="footer-copyright">
-      <p>Copyright © 2021 - 2024 <a target="_blank" rel="noopener" href="https://github.com/echodjx">echodjx</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a> | Theme <a target="_blank" rel="noopener" href="https://github.com/yuang01/theme">Bamboo</a> </p>
+      <p>Copyright © 2021 - 2024 <a target="_blank" rel="noopener" href="https://github.com/echodjx">echodjx</a> | Powered by <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a>  </p>
 
     </div>
     <div class="footer-custom">
@@ -1729,6 +1787,26 @@
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
     
+	
+	<br/>
+	
+	<span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+    <script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("7/7/2021 18:00:00");
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+    setInterval("createtime()",250);
+    </script>
   </div>
 </div>
 
@@ -1800,9 +1878,7 @@
     <!-- 爱心点击 -->
 
 	
-		<canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 999; pointer-events: none;" ></canvas>
-		<script src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script>
-		<script src="/js/cursor/explosion.min.js"></script>
+		<script src="/js/cursor/text.js"></script>
 	
 
 
